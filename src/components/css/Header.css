@@ -1,0 +1,23 @@
+#home {
+    min-height: 100vh;
+    background: url('../../assets/img/peakpx.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home .container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+#home .container h1 {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#home .container .btn {
+	width: 150px;
+}

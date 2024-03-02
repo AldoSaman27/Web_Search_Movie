@@ -1,0 +1,13 @@
+#movie {
+    min-height: 100vh;
+}
+
+#movie .container {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#movie .container h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
