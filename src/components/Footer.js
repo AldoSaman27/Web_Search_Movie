@@ -1,3 +1,4 @@
+// React Bootstrap Icons
 import { HeartFill } from 'react-bootstrap-icons';
 
 const Footer = () => {
