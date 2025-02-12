@@ -1,4 +1,7 @@
+// Style
 import './css/Header.css';
+
+// React Bootstrap
 import { Button } from 'react-bootstrap';
 
 const Header = () => {
