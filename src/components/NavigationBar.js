@@ -1,19 +1,17 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
+// React
 import React, { useEffect } from 'react';
-import $ from 'jquery';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+
+// React Bootstrap
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const NavigationBar = () => {
     useEffect(() => {
-        $(window).scroll(function() {
-          if ($(document).scrollTop() > 50) {
-            $('nav').addClass('bg-dark');
-          } else {
-            $('nav').removeClass('bg-dark');
-          }
-        });
-      }, []);
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementsByClassName("navbar")[0];
+            if (window.scrollY > 0) navbar.classList.add("bg-dark");
+            else navbar.classList.remove("bg-dark");
+        })
+    }, [])
 
     return (
         <div>
